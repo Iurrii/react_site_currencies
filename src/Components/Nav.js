@@ -1,8 +1,5 @@
 import React from 'react';
 import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
   Link,
 } from 'react-router-dom';
 import './Nav.css'
@@ -16,12 +13,12 @@ class Nav extends React.Component {
   render() {
 
     let links = {
-      Главная: '/',
-      Статистика: '',
-      Банки: '',
-      Пункты_обмена: '',
-      О_нас: '/about',
-      Контакты: ''
+      Main: '/',
+      Statistics: '',
+      Banks: '',
+      Offices: '',
+      About: '/about',
+      Contacts: ''
     }
 
     return (

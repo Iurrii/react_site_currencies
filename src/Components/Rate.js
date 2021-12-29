@@ -59,15 +59,3 @@ class Rate extends React.Component {
 };
 
 export default Rate;
-
-
-// let palochka = {
-//   crabovaya: { miaso: "crab" },
-//   twix: { miaso: "otsytstvyet"}
-// }
-
-
-// console.log(Object.entries(palochka));
-// console.log(Object.entries(palochka)[0]);
-// console.log(Object.entries(palochka)[0][1]);
-// console.log(Object.entries(palochka)[0][1].miaso);
