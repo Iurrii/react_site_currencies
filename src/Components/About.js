@@ -9,7 +9,7 @@ class About extends React.Component {
   render() {
     return (
       <div className="">
-        <p>About</p>
+        <p>Данное SPA выполнено на библиотеках React, Mustard, использовано API Центробанка РФ. </p>
 
       </div>
     )

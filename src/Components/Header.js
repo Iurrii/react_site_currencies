@@ -1,8 +1,6 @@
 import React from 'react';
 import './Header.css'
 
-import Nav from './Nav';
-
 
 class Header extends React.Component {
     // constructor(props) {
@@ -11,9 +9,7 @@ class Header extends React.Component {
     render() {
         return (
             <header className='header'>
-                <h1 className="">Сurrency exchange</h1>
-
-                <Nav />
+                <h1>Курс валют Центробанка РФ - информационный сайт</h1>
                 
             </header>
         )

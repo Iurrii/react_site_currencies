@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Link,
+  NavLink
 } from 'react-router-dom';
 import './Nav.css'
 
@@ -13,26 +13,19 @@ class Nav extends React.Component {
   render() {
 
     let links = {
-      Main: '/',
-      Statistics: '',
-      Banks: '',
-      Offices: '',
-      About: '/about',
-      Contacts: ''
+      Главная: '/',
+      Офисы: '/offices',
+      Сайт: '/about'
     }
 
     return (
       <nav className="nav-container">
-        <div className="">
-          <ul className="nav-links">
+        <ul className="nav-links">
+          {Object.keys(links).map(item => {
+            return <li key={item}><NavLink to={links[item]}>{item}</NavLink></li>
+          })}
 
-            {Object.keys(links).map(item => {
-              return <li key={item}><Link to={links[item]}>{item}</Link></li>
-            })}
-
-          </ul>
-
-        </div>
+        </ul>
       </nav>
 
     )

@@ -1,6 +1,5 @@
 import React from "react";
 import './Calculator.css';
-import 'mustard-ui';
 
 class Calculator extends React.Component {
   constructor(props) {

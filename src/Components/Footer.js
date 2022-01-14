@@ -17,7 +17,6 @@ class Footer extends React.Component {
               </div>
             </div>
             <div className="col col-sm-6 col-lg-3 col-lg-offset-1 align-right">
-              <h4 className="footer-links-category">Links Category 1</h4>
               <ul className="footer-links">
                 <li><a href="https://github.com/Iurrii/react_site_currencies">GitHub проекта</a></li>
                 <li><a href="https://t.me/svejkys">Написать мне в Телеграм</a></li>
