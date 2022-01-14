@@ -22,19 +22,19 @@ class Nav extends React.Component {
     }
 
     return (
-      <div className="header-nav">
-        <div className="container">
-          <nav>
-            <ul>
+      <nav className="nav-container">
+        <div className="">
+          <ul className="nav-links">
 
-              {Object.keys(links).map(item => {
-                return <li key={item}><Link to={links[item]}>{item}</Link></li>
-              })}
+            {Object.keys(links).map(item => {
+              return <li key={item}><Link to={links[item]}>{item}</Link></li>
+            })}
 
-            </ul>
-          </nav>
+          </ul>
+
         </div>
-      </div>
+      </nav>
+
     )
   }
 };

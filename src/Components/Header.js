@@ -10,14 +10,8 @@ class Header extends React.Component {
     // }
     render() {
         return (
-            <header>
-                <div className="top-bar animate-dropdown"></div>
-                <div className="main-header">
-                    <div className="container">
-                        <h1 className="site-title">Сurrency exchange</h1>
-
-                    </div>
-                </div>
+            <header className='header'>
+                <h1 className="">Сurrency exchange</h1>
 
                 <Nav />
                 

@@ -2,41 +2,35 @@ import React from 'react';
 import './Footer.css'
 
 class Footer extends React.Component {
-    // constructor(props) {
-    //     super(props);
-    // }
-    render() {
-        return (
-            <footer id="footer" className="footer">
-                <div className="footer-bottom">
-                    <div className="container">
-                        <div className="flex-container">
-                            <div className="flex-item">
-                                <h1 className="footer-title"><a href="https://itgid.info">2019 &copy; React. Lite Level</a></h1>
-                                <p> All Rights Reserved</p>
+  // constructor(props) {
+  //     super(props);
+  // }
+  render() {
+    return (
+      <footer>
+        <div className="container">
+          <div className="row">
+            <div className="col col-lg-5">
+              <div className="footer-text">
+                <p className="h3">О проекте</p>
+                <p>Данное SPA выполнено на библиотеках React, Mustard, использовано API Центробанка РФ.  </p>
+              </div>
+            </div>
+            <div className="col col-sm-6 col-lg-3 col-lg-offset-1 align-right">
+              <h4 className="footer-links-category">Links Category 1</h4>
+              <ul className="footer-links">
+                <li><a href="https://github.com/Iurrii/react_site_currencies">GitHub проекта</a></li>
+                <li><a href="https://t.me/svejkys">Написать мне в Телеграм</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-                            </div>
-                            <div className="flex-item">
-                                <div className="module-body">
-                                    <ul className="list-unstyled">
-                                        <li><a href="/sitemap/" tooltip="Карта сайта">Карта сайта</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className="flex-item">
-                                <div className="module-body">
-                                    <ul className="list-unstyled">
-                                        <li><a href='/contacts'>Контакты</a></li>
-                                        <li><a href='/about'>О сервисе</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        )
-    }
+        <p className="copyright align-center">© 2022 Юрий Тэ</p>
+
+      </footer>
+    )
+  }
 };
 
 export default Footer;

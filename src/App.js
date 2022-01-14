@@ -9,6 +9,7 @@ import Footer from './Components/Footer';
 import Header from './Components/Header';
 import Rate from './Components/Rate';
 import About from './Components/About.js';
+import Error404 from './Components/Error404';
 
 
 class App extends React.Component {
@@ -28,7 +29,7 @@ class App extends React.Component {
               <Routes>
                 <Route exact path="/" element={<Rate />} />
                 <Route exact path="/about" element={<About />} />
-                {/* <Route path="*" element={<Error404 />} /> */}
+                <Route path="*" element={<Error404 />} />
               </Routes>
 
             </main>
@@ -36,8 +37,8 @@ class App extends React.Component {
 
           <div className="container" id="cookie_info">
             <div className="site-content">
-              <div className="well">На сайте используются cookie для сбора информации технического характера.<br />
-                Оставаясь на сайте, Вы соглашаетесь на их использование и обработку</div>
+              <div className="well">На сайте используются cookie для сбора информации технического характера.
+                Оставаясь на сайте, Вы соглашаетесь на их использование и обработку.</div>
             </div>
           </div>
 

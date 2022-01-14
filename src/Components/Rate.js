@@ -1,5 +1,6 @@
 import React from 'react';
 import Calculator from './Calculator.js';
+import 'mustard-ui';
 import './Rate.css'
 
 
@@ -38,17 +39,21 @@ class Rate extends React.Component {
 
   render() {
     return (
-      <section className="rate">
+      <section className="panel">
 
-        <h3> Курс валют на {this.state.date.substring(0, 10)}</h3>
-        <div className="flex-container">
+        <h2> Курс валют на {this.state.date.substring(0, 10)}</h2>
+        <div className="panel-body row">
 
           {Object.keys(this.state.currencyRate).map((keyName) => (
-            <div className="block flex-item" key={keyName}>
-              <div className="currency-name">{keyName}</div>
-              <div className="currency-in">{this.state.currencyRate[keyName].Value.toFixed(2)} руб</div>
-              <p>за 1 {this.state.currencyRate[keyName].Name}</p>
+            <div className="col col-lg-3 col-md-6 col-sm-12" key={keyName}>
+              <div className="card" key={keyName}>
+                <p className="card-title">{keyName}</p>
+                <p className="currency-in">{this.state.currencyRate[keyName].Value.toFixed(2)} руб</p>
+                <p>за 1 {this.state.currencyRate[keyName].Name}</p>
+              </div>
             </div>
+
+
           ))}
 
         </div>

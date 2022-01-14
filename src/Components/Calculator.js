@@ -1,5 +1,6 @@
 import React from "react";
 import './Calculator.css';
+import 'mustard-ui';
 
 class Calculator extends React.Component {
   constructor(props) {
@@ -29,9 +30,9 @@ class Calculator extends React.Component {
 
   render() {
     return (
-      <div className="calculator">
+      <div className="calculator panel">
         <h3> Калькулятор обмена</h3>
-        <div className="block">
+        <div className="panel-body">
           {/* <div>Я хочу</div>
           <div>
             <label>
@@ -46,9 +47,9 @@ class Calculator extends React.Component {
               value for sale
             </label>
           </div> */}
-          <h2>Стоимость покупки по курсу ЦБ РФ:</h2>
+          <h4>Стоимость покупки по курсу ЦБ РФ:</h4>
 
-          <form onSubmit={this.calcRate}>
+          <form className="form-control-group" onSubmit={this.calcRate}>
             <input type="number" defaultValue="100" name="count-currency"/>
             <select name="type-currency">
               {Object.keys(this.props.rate).map((keyName) => (
@@ -56,16 +57,17 @@ class Calculator extends React.Component {
               ))}
             </select>
 
-            <input type="submit" defaultValue="calc" />
+            <input type="submit" className="button-primary" defaultValue="calc" />
           </form>
 
           <div>
-            <ul className="calc-res">
-              <li>RUB {this.state.result}</li>
-            </ul>
+            <p>{this.state.result} РУБ</p>
           </div>
         </div>
+
+
       </div>
+
 
     );
   }
