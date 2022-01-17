@@ -7,13 +7,12 @@ class Footer extends React.Component {
   // }
   render() {
     return (
-      <footer>
-        <div className="container">
+      <footer className='footer'>
+        <div className="footer__container container">
           <div className="row">
             <div className="col col-lg-5">
               <div className="footer-text">
-                <p className="h3">О проекте</p>
-                <p>Данное SPA выполнено на библиотеках React, Mustard, использовано API Центробанка РФ.  </p>
+                <p>Сайт является информационно-учебным проектом. Вся информация предоставлена в ознакомительных целях.</p>
               </div>
             </div>
             <div className="col col-sm-6 col-lg-3 col-lg-offset-1 align-right">
@@ -25,7 +24,7 @@ class Footer extends React.Component {
           </div>
         </div>
 
-        <p className="copyright align-center">© 2022 Юрий Тэ</p>
+        <p className="footer__copyright copyright align-center">© 2022 Юрий Тэ</p>
 
       </footer>
     )

@@ -5,6 +5,7 @@ import {
   Route
 } from 'react-router-dom';
 import 'mustard-ui';
+import './App.css';
 
 import Footer from './Components/Footer';
 import Header from './Components/Header';
@@ -39,13 +40,6 @@ class App extends React.Component {
               </Routes>
 
             </main>
-          </div>
-
-          <div className="container">
-            <div className="site-content">
-              <div className="well">На сайте используются cookie для сбора информации технического характера.
-                Оставаясь на сайте, Вы соглашаетесь на их использование и обработку.</div>
-            </div>
           </div>
 
           <Footer />

@@ -31,7 +31,7 @@ class Calculator extends React.Component {
     return (
       <div className="calculator panel">
         <h3> Калькулятор обмена</h3>
-        <div className="panel-body">
+        <div className="hohoho panel-body">
           {/* <div>Я хочу</div>
           <div>
             <label>
@@ -46,11 +46,11 @@ class Calculator extends React.Component {
               value for sale
             </label>
           </div> */}
-          <h4>Стоимость покупки по курсу ЦБ РФ:</h4>
+          <h4>Стоимость покупки:</h4>
 
           <form className="form-control-group" onSubmit={this.calcRate}>
-            <input type="number" defaultValue="100" name="count-currency"/>
-            <select name="type-currency">
+            <input className="form-control-group__input" type="number" inputMode="numeric" defaultValue="100" name="count-currency"/>
+            <select className="form-control-group__select" name="type-currency">
               {Object.keys(this.props.rate).map((keyName) => (
                 <option value={this.props.rate[keyName].Value} key={keyName}>{this.props.rate[keyName].CharCode}</option>
               ))}
@@ -59,8 +59,8 @@ class Calculator extends React.Component {
             <input type="submit" className="button-primary" defaultValue="calc" />
           </form>
 
-          <div>
-            <p>{this.state.result} РУБ</p>
+          <div className="result-block">
+            <p className="result-block__text">{this.state.result} руб. по курсу ЦБ РФ</p>
           </div>
         </div>
 

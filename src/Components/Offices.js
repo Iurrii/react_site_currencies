@@ -8,7 +8,8 @@ class Offices extends React.Component {
   render() {
     return (
       <div className="">
-        <p>Офисы Центробанка России:</p>
+        <h2>Центральный офис</h2>
+        <p>г.Зуево-Кукуево, ул. Пушкина-Колотушкина, 8</p>
 
       </div>
     )

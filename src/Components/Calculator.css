@@ -1,0 +1,51 @@
+.hohoho {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.form-control-group {
+  height: 40px;
+  margin-bottom:  4vh;
+}
+
+.form-control-group__input {
+  margin-right: 3px;
+}
+
+.form-control-group__select {
+  background-image:none;
+  margin-right: 3px;
+}
+
+.form-control-group__select:focus {
+  background-image:none;
+}
+
+.button-primary {
+  margin: 0 !important;
+  box-sizing: border-box;
+}
+
+.result-block {
+
+}
+
+.result-block__text {
+  display: block;
+  margin: auto;
+  text-align: center;
+  font-size: 30px;
+  box-sizing:border-box;
+  width: fit-content;
+}

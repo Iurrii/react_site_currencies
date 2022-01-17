@@ -1,3 +1,9 @@
 nav {
     background:none !important;
 }
+
+.active {
+    background-color: rgba(117, 117, 117, 1);
+    color: white;
+    border-bottom: none !important;
+}
